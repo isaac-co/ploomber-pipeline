@@ -1,0 +1,14 @@
+tasks:
+  - source: load_titanic.py
+    product:
+      data: output/titanic_raw.csv
+      nb: output/load_titanic.ipynb
+
+  - source: clean_titanic.py
+    product:
+      data: output/died.csv
+      data2: output/survived.csv
+      nb: output/clean_titanic.ipynb
+
+  - source: plot.py
+    product: output/report.ipynb
